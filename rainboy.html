@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+rainboy.html is a website dedicated to my band, Rainboy. Inside includes
+an about section, links to our social media, and our song on Spotify.
+-->
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/rainboy.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/music.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <script src="rainboy.js"></script>
+    <script src="laxxx/lib/lax.js" ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Bangers&family=Leckerli+One&display=swap">
+
+    <title>Rainboy</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="rainboy">Rainboy</h1>
+      <h2 id="sub-rainboy">the official site for the official band.</h2>
+      <div id="navigation">
+        <a href="#about">About</a>
+        <a href="#listen">Music</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div id="cloud">
+        <img id="cloud1" src="img/cloud1.png" alt="clound number 1">
+        <img id="cloud2" src="img/cloud2.png" alt="cloud number 2">
+        <img id="cloud3" src="img/cloud3.png" alt="cloud number 3">
+        <img id="cloud4" src="img/cloud4.png" alt="cloud number 4">
+        <img id="cloud5" src="img/cloud3.png" alt="cloud number 5">
+        <img id="cloud6" src="img/cloud2.png" alt="cloud number 6">
+      </div>
+      <div id="bird-song">
+        <p>
+          tweet click me tweet
+        </p>
+        <p id="randTweet">
+        </p>
+        <div id="bird">
+          <img src="img/bird.png" alt="holes bird">
+        </div>
+        <div id="branch">
+          <img src="img/branch.png" alt="the bird's branch">
+        </div>
+        <audio id="holes" class="paused" src="audio/holes-guitar.m4a">
+        </audio>
+      </div>
+    </main>
+
+    <section id="first-layer"></section>
+    <section id="dirt"></section>
+    <section id="concrete"></section>
+
+    <section id="about" class="total-page dark">
+      <h2>Somewhere deep<br>in the New York City<br>Underground</h2>
+      <p class="dark-text">
+        Graeme, Jasper, Q, and Liam all had separate busking zones
+        along the NY subway lines. For years the four waged
+        bloody warfare, struggling to claim the busking throne.
+        Eventually they realized that they could combine their
+        strength to form the best rock band the world has ever known...
+      </p>
+    </section>
+
+    <section class="total-page" id="each-rainboy">
+      <h2>Choose your Rainboy!!</h2>
+      <hr>
+      <section id="daboiz">
+        <article>
+          <h2>Quinn</h2>
+          <img src="img/kaboom.png" alt="quinn's kaboom">
+          <img id="quinn" class="boi" src="img/sexiq.png" alt="quinn">
+        </article>
+        <article>
+          <h2>Liam</h2>
+          <img src="img/kaboom3.png" alt="liam's kaboom">
+          <img id="liam" class="boi" src="img/momL.png" alt="liam">
+        </article>
+        <article>
+          <h2>Jasper</h2>
+          <img src="img/kaboom2.png" alt="jasper's kaboom">
+          <img id="jasper" class="boi" src="img/hatsJ.png" alt="jasper but with hats">
+        </article>
+        <article>
+          <h2>Graeme</h2>
+          <img src="img/kaboom1.png" alt="graeme's kaboom">
+          <img id="graeme" class="boi" src="img/gothg.png" alt="graeme with lipstick">
+        </article>
+      </section>
+      <div id="jasper-poke" class="hidden poke">
+        <img src="img/jasper-poke.png" alt="jasper pokemon" class="pokemon">
+      </div>
+      <div id="liam-poke" class="hidden poke">
+        <img src="img/liam-poke.png" alt="liam pokemon" class="pokemon">
+      </div>
+      <div id="quinn-poke" class="hidden poke">
+        <img src="img/quinn-poke.png" alt="liam pokemon" class="pokemon">
+      </div>
+      <div id="graeme-poke" class="hidden poke">
+        <img src="img/graeme-poke.png" alt="liam pokemon" class="pokemon">
+      </div>
+    </section>
+
+    <div id="listen">
+      <div>
+        <img class="lax" data-lax-translate-x="800 -800, 400 0"
+        data-lax-anchor="#listen" src="img/listen.png"
+        alt="comic banner that says listen">
+      </div>
+      <div id="to-my-soundcloud">
+        <img class="lax" data-lax-translate-x="300 5000, 50 0"
+        data-lax-anchor="#listen" src="img/listen-to-my-soundcloud.png"
+        alt="comic banner that says listen to my soundcloud">
+      </div>
+    </div>
+
+    <section class="total-page" id="music">
+      <div id="speech-bubble">
+        <img src="img/bird-speech.png"
+        alt="bird with speech bubble announcing Rainboy's newest song">
+      </div>
+      <div id="streaming-logos">
+        <div id="spotify" class="logo"></div>
+        <div id="apple" class="logo"></div>
+        <div id="youtube" class="logo"></div>
+      </div>
+      <div id="streaming-display">
+        <div id="spotify-embedded">
+          <iframe id="spotify-iframe" src="https://open.spotify.com/embed/track/7prOINYY0acE0DmCCUC3PJ"
+          width="500" height="450" frameborder="0" allowtransparency="true"
+          allow="encrypted-media"></iframe>
+        </div>
+        <div id="apple-embedded" class="hidden">
+          <iframe id="apple-iframe" allow="autoplay *; encrypted-media *;"
+          frameborder="0" height="450"
+          style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+          src="https://embed.music.apple.com/us/album/hey-darling-single/1520343046"></iframe>
+        </div>
+        <div id="youtube-embedded" class="hidden">
+          <iframe id="youtube-iframe" width="560" height="450"
+          src="https://www.youtube.com/embed/YtG1C53Di2Q" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div>
+        <div id="socials">
+          <div id="facebook"></div>
+          <div id="instagram"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
